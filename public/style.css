@@ -472,7 +472,7 @@ footer {
 }
 
 .footer-socials img {
-    width: 30px; 
+    width: 30px;
     height: 30px;
     object-fit: contain;
 }
@@ -619,7 +619,7 @@ footer {
         border-radius: 10px;
     }
 
-    .the-extravaganza{
+    .the-extravaganza {
         margin-top: 250px;
     }
 
@@ -683,10 +683,21 @@ footer {
 
     .nav-links.active {
         display: flex;
+        margin-top: -77px;
+        background-color: rgba(0, 0, 0, 1);
+    }
+
+    .nav-links.active:hover {
+        text-decoration: underline;
+    }
+
+    .nav-links.active a:hover {
+        color: orange;
     }
 
     .hamburger {
         display: block;
+        z-index: 2;
     }
 
     .task3_image-container img {
@@ -701,7 +712,7 @@ footer {
         font-size: 2em;
     }
 
-    .the-extravaganza{
+    .the-extravaganza {
         margin-top: 250px;
     }
 
@@ -709,13 +720,16 @@ footer {
         width: 500px;
     }
 
-    .albums{
+    .albums {
         gap: 10px;
     }
 
-    .album{
+    .album {
         margin-bottom: 5px;
     }
+
+
+
 }
 
 /* Small Mobile (360px - 540px) */
@@ -748,35 +762,49 @@ footer {
         font-size: .6em;
     }
 
-    .right-image, .video-container{
-        width: 400px;
+    .right-image,
+    .video-container {
+        width: 370px;
     }
 
-    .see-albums{
+    .see-albums {
         font-size: 2em;
     }
 
-    .albums{
+    .albums {
         padding: 20px 10px;
         gap: 10px;
     }
 
-    .album{
+    .album {
         margin-bottom: 5px;
     }
 
-    #spotify-frame{
-        width: 250;
+    .footer-container {
+        grid-template-columns: 1fr;
     }
 
-    .footer-links{
+    .footer-right {
+        grid-column: 1 / 2;
+        order: -1;
+    }
+
+    .footer-left {
+        grid-column: 1 / 2;
+    }
+
+    .footer-links {
         margin-top: 30px;
     }
 
-    .footer-links ul li a{
+    .footer-links ul li a {
         font-size: .7em;
     }
 
+    .footer-newsletter h2, p{
+        text-align: center;
+    }
+
+
 
 }
-
