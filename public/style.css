@@ -1,0 +1,782 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: Minion;
+    src: url('../Fonts/Minion-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Horizon';
+    src: url('../Fonts/horizon.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Minion', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/*Hero portion*/
+.hero-section {
+    position: relative;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.logo {
+    width: 50px;
+    height: 25px;
+    filter: invert(100);
+}
+
+.joji video {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+/*Card portion*/
+.merchandise-title h1 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 8vw;
+    color: white;
+    font-weight: lighter;
+}
+
+.main-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.card-wrapper {
+    width: 100%;
+}
+
+.cardlist {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+.carditem {
+    margin: 10px;
+    flex: 0 1 auto;
+    background-color: #343434;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+    transition: padding-top 0.3s ease;
+}
+
+.carditem:hover {
+    padding-top: 40px;
+}
+
+.cardlink {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+}
+
+.cardimg {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-top: -20px;
+    transition: margin-top 0.3s ease;
+}
+
+.carditem:hover .cardimg {
+    margin-top: -30px;
+}
+
+.price {
+    font-family: Raleway;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+    margin: 10px 0;
+    padding: 0 15px;
+}
+
+.itemname {
+    font-family: Raleway;
+    color: white;
+    font-size: 1.6em;
+    font-weight: 100;
+    margin: 0 0 10px 0;
+    padding: 0 15px;
+}
+
+.purchase {
+    background-color: #a8a8a8;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.purchase:hover {
+    background-color: #6b6b6b;
+}
+
+.purchase img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+/* Image Gallery portion, with text */
+.pandemonium-tour_img-gallery {
+    position: relative;
+    margin-top: 70px;
+}
+
+.pandemonium {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.pandemonium h1 {
+    font-weight: lighter;
+    font-size: 6.5em;
+}
+
+.pandemonium p {
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.pandemonium h1,
+.pandemonium p {
+    font-family: 'Horizon', sans-serif;
+    margin: 0;
+    padding: 10px;
+    filter: drop-shadow(100) brightness(100);
+}
+
+.pandemonium button {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.pnd_btn a {
+    color: #000;
+    text-decoration: none;
+}
+
+.pnd_btn:hover {
+    background-color: #bdbdbd;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0;
+    position: relative;
+}
+
+.image-container img {
+    filter: grayscale(100);
+    max-width: 25%;
+    height: auto;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.image-container img:hover {
+    filter: brightness(1);
+}
+
+
+/*Extravaganza portion*/
+.the-extravaganza {
+    margin: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+}
+
+.video-container {
+    position: relative;
+    width: 700px;
+}
+
+.video-thumbnail {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    height: 315px;
+}
+
+.video-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 48px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.play-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.right-image {
+    width: 500px;
+}
+
+.right-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/*Discography portion*/
+.discography {
+    width: 100%;
+}
+
+.see-albums {
+    margin-top: 70px;
+    color: white;
+    font-size: 3em;
+    font-family: Horizon;
+}
+
+.albums {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px 40px;
+}
+
+.album img {
+    width: 325px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.album img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Popup styling */
+.popup {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: -450px;
+    width: 450px;
+    height: 200px;
+    background-color: rgba(34, 34, 34, 0.5);
+    border-radius: 12px;
+    z-index: 999;
+    transition: right 0.3s ease;
+}
+
+.popup-content {
+    position: relative;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.toggle-button {
+    position: absolute;
+    top: 10px;
+    right: -30px;
+    z-index: 1000;
+    background-color: #222222;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    transition: right 0.3s ease;
+}
+
+.platform-btns {
+    justify-content: center;
+    align-items: center;
+}
+
+.platform-button {
+    display: inline-block;
+    margin: 10px;
+}
+
+.platform-button img {
+    width: auto;
+    height: 50px;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    background-color: #222222;
+    color: white;
+    padding: 30px;
+    font-family: "Horizon";
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    border-radius: 20px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    align-items: flex-start;
+}
+
+/* Left Section (Links and Social Media) */
+.footer-left {
+    grid-column: 1 / 2;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-family: "Horizon";
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: orange;
+}
+
+/* Social Media Section */
+.footer-socials {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-socials a {
+    margin-right: 10px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.footer-socials a:hover {
+    transform: scale(1.1);
+}
+
+.footer-socials img {
+    width: 30px; 
+    height: 30px;
+    object-fit: contain;
+}
+
+/* Right Section (Newsletter) */
+.footer-right {
+    grid-column: 2 / 3;
+}
+
+.footer-newsletter h2 {
+    color: orange;
+    font-family: "Horizon";
+}
+
+#newsletter-form {
+    margin-top: 10px;
+}
+
+#newsletter-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#newsletter-form input[type="email"],
+#newsletter-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#newsletter-form button {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-newsletter p {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+/* Default (Desktop 1024 px and upward) */
+.price {
+    font-size: 0.8em;
+}
+
+.itemname {
+    font-size: 1em;
+}
+
+.pandemonium h1 {
+    font-size: 5em;
+}
+
+.pandemonium p {
+    font-size: 2em;
+}
+
+/* Tablet (720px - 1024px) */
+@media (max-width: 1024px) {
+
+    .pandemonium {
+        position: static;
+        margin-bottom: 10px;
+        top: auto;
+        left: auto;
+        transform: none;
+    }
+
+    .pandemonium h1 {
+        font-size: 2em;
+    }
+
+    .pandemonium p {
+        font-size: 1.2em;
+        margin-top: -20px;
+    }
+
+    .image-container {
+        margin-top: 10px;
+    }
+
+    .video-container {
+        width: 700px;
+    }
+
+    .the-extravaganza {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .video-thumbnail {
+        cursor: pointer;
+        width: 100%;
+        height: 315px;
+    }
+
+    .video-thumbnail img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        font-size: 48px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease;
+    }
+
+    .play-button:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .right-image {
+        width: 500px;
+        order: -1;
+    }
+
+    .right-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .the-extravaganza{
+        margin-top: 250px;
+    }
+
+    .discography {
+        width: 100%;
+    }
+
+    .see-albums {
+        margin-top: 70px;
+        color: white;
+        font-size: 3em;
+        font-family: Horizon;
+    }
+
+    .albums {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 20px 40px;
+    }
+
+    .album {
+        flex: 1 1 calc(50% - 60px);
+        margin-bottom: 30px;
+    }
+
+    .album img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease;
+    }
+
+    .album img:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    .albums {
+        justify-content: center;
+    }
+
+    .album {
+        flex: 1 1 calc(50% - 30px);
+        margin-bottom: 30px;
+    }
+}
+
+/* Large Mobile (540px - 720px) */
+@media (max-width: 720px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .task3_image-container img {
+        max-width: 50%;
+    }
+
+    .pandemonium h1 {
+        font-size: 3em;
+    }
+
+    .pandemonium p {
+        font-size: 2em;
+    }
+
+    .the-extravaganza{
+        margin-top: 250px;
+    }
+
+    .video-container {
+        width: 500px;
+    }
+
+    .albums{
+        gap: 10px;
+    }
+
+    .album{
+        margin-bottom: 5px;
+    }
+}
+
+/* Small Mobile (360px - 540px) */
+@media (max-width: 540px) {
+    .card-wrapper {
+        max-width: 100%;
+    }
+
+    .image-container img {
+        max-width: 33.33%;
+    }
+
+    .pandemonium h1 {
+        font-size: 2em;
+    }
+
+    .pandemonium p {
+        font-size: 1.5em;
+    }
+
+    .image-container img {
+        max-width: 100%;
+    }
+
+    .pandemonium h1 {
+        font-size: 1.5em;
+    }
+
+    .pandemonium p {
+        font-size: .6em;
+    }
+
+    .right-image, .video-container{
+        width: 400px;
+    }
+
+    .see-albums{
+        font-size: 2em;
+    }
+
+    .albums{
+        padding: 20px 10px;
+        gap: 10px;
+    }
+
+    .album{
+        margin-bottom: 5px;
+    }
+
+    #spotify-frame{
+        width: 250;
+    }
+
+    .footer-links{
+        margin-top: 30px;
+    }
+
+    .footer-links ul li a{
+        font-size: .7em;
+    }
+
+
+}
+

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOJI</title>
+    <link rel="icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmiufMA0A5s2nKWGTsjoSvCGtL0f6IFzBz_g&s">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+    <!--The above technologies are used in the site (GSAP, Slick, Links to my CSS and JS.)-->
+</head>
+
+<body>
+
+    <div class="joji-central-tasks">
+        <!--Hero section of the site begins here.-->
+        <div class="hero-section">
+            <nav class="navbar">
+                <a href="https://shop.jojimusic.com">
+                    <img class="logo" src="https://shop.jojimusic.com/cdn/shop/files/JOJI_LOGO.png?v=1661362129"
+                        alt="Joji">
+                </a>
+                <div class="nav-links">
+                    <a href="#merchandise">MERCHANDISE</a>
+                    <a href="#pandemonium">PANDEMONIUM</a>
+                    <a href="#see-albums">TUNES</a>
+                    <a href="#footer">NEWSLETTER</a>
+                </div>
+                <div class="hamburger" onclick="toggleMenu()">
+                    &#9776; <!-- Hamburger icon. -->
+                </div>
+            </nav>
+            <div class="joji">
+                <video src="../Images/JOJI.mp4" autoplay loop muted alt="loop video of smoke"></video>
+            </div>
+        </div>
+
+
+        <div class="merchandise-title" id="merchandise"> <!--Merchandise section begins here.-->
+            <h1>MERCHANDISE</h1>
+        </div>
+
+        <br>
+
+        <div class="main-body">
+            <div class="card-wrapper">  <!--The below codes are for the items in the slick carousel..-->
+                <ul class="cardlist">
+                    <li class="carditem">
+                        <a href="#" class="cardlink">
+                            <img src="https://shop.jojimusic.com/cdn/shop/products/SMITHEREENS_D2C_Exclusive_Vinyl_FULL_001_1.png?v=1667930432&width=360"
+                                alt="Smithereens Exclusive Vinyl" class="cardimg">
+                            <p class="price">Dhs. 150.00 AED</p>
+                            <h2 class="itemname">SMITHEREENS <br> Exclusive Vinyl</h2>
+                            <button class="purchase"><img src="../Images/CART.png" alt="Purchase"></button>
+                        </a>
+                    </li>
+
+                    <li class="carditem">
+                        <a href="#" class="cardlink">
+                            <img src="https://shop.jojimusic.com/cdn/shop/products/SMITHEREENS_Standard_CD_58e3cf9b-3060-409c-87c7-4887794aea05.png?v=1668814012&width=360"
+                                alt="Smithereens Standard CD" class="cardimg">
+                            <p class="price">Dhs. 45.00 AED</p>
+                            <h2 class="itemname">SMITHEREENS <br> Standard CD</h2>
+                            <button class="purchase"><img src="../Images/CART.png" alt="Purchase"></button>
+                        </a>
+                    </li>
+
+                    <li class="carditem">
+                        <a href="#" class="cardlink">
+                            <img src="https://shop.jojimusic.com/cdn/shop/files/JOJI_HORSE_TEE_FRONTBACK.png?v=1702577866&width=360"
+                                alt="Pandemonium Tee" class="cardimg">
+                            <p class="price">Dhs. 168.00 AED</p>
+                            <h2 class="itemname">PANDEMONIUM <br> T-Shirt</h2>
+                            <button class="purchase"><img src="../Images/CART.png" alt="Purchase"></button>
+                        </a>
+                    </li>
+
+                    <li class="carditem">
+                        <a href="#" class="cardlink">
+                            <img src="https://shop.jojimusic.com/cdn/shop/products/jojiwhitetourtee.png?v=1667596372&width=360"
+                                alt="Smithereens White Tour Tee" class="cardimg">
+                            <p class="price">Dhs. 150.00 AED</p>
+                            <h2 class="itemname">SMITHEREENS <br> White Tee</h2>
+                            <button class="purchase"><img src="../Images/CART.png" alt="Purchase"></button>
+                        </a>
+                    </li>
+
+                    <li class="carditem">
+                        <a href="#" class="cardlink">
+                            <img src="https://shop.jojimusic.com/cdn/shop/files/pandemoniumhoodiefrontandback.png?v=1699996508&width=360"
+                                alt="Pandemonium Hoodie" class="cardimg">
+                            <p class="price">Dhs. 336.00 AED</p>
+                            <h2 class="itemname">PANDEMONIUM <br> Hoodie</h2>
+                            <button class="purchase"><img src="../Images/CART.png" alt="Purchase"></button>
+                        </a>
+                    </li>
+
+                    <li class="carditem">
+                        <a href="#" class="cardlink">
+                            <img src="https://shop.jojimusic.com/cdn/shop/files/creamjojitee.png?v=1685050525&width=360"
+                                alt="Natural Oblivion Tee" class="cardimg">
+                            <p class="price">Dhs. 150.00 AED</p>
+                            <h2 class="itemname">Natural Oblivion <br> Cream Tee</h2>
+                            <button class="purchase"><img src="../Images/CART.png" alt="Purchase"></button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <br>
+
+            <div class="pandemonium-tour_img-gallery" id="pandemonium"> <!--Image background for the Pandemonium Tour section-->
+                <div class="image-container">
+                    <img src="https://preview.redd.it/ffd6vscdbpl91.jpg?width=1080&crop=smart&auto=webp&s=ceeb394b8c33cf84e42b4d5dc3126d680c11439a"
+                        alt="Joji singing from the heart">
+                    <img src="https://www.notch.one/wp-content/uploads/2024/01/Joji-2-scaled.jpg"
+                        alt="Pandemonium Concert">
+                    <img src="https://billboardphilippines.com/wp-content/uploads/2023/12/Joji-in-Manila-4-1600x900.jpg"
+                        alt="Joji in Manila">
+                    <img src="https://preview.redd.it/2vmi1addbpl91.jpg?width=1440&format=pjpg&auto=webp&s=2ea04a5d21c02b2078469857e41aa1befa4320e2"
+                        alt="Joji singing">
+                </div>
+
+                <div class="pandemonium"> <!--Pandemonium TOur Text-->
+                    <h1>PANDEMONIUM Tour</h1>
+                    <p>Missed out? See clips of the tour here.</p>
+                    <button class="pnd_btn"><a href="https://www.youtube.com/watch?v=cKwFryBnqtU">CLICK</a></button>
+                </div>
+            </div>
+
+            <div class="the-extravaganza"> <!--The Extravaganza portion, with image and thumbnail.-->
+                <div class="video-container"> 
+                    <div class="video-thumbnail" onclick="playVideo()">
+                        <img src="../Images/extravaganza-thumbnail.jpg" alt="video thumbnail" />
+                        <div class="play-button">&#9658;</div>
+                    </div>
+                    <iframe id="youtube-video" width="700" height="315"
+                        src="https://www.youtube.com/embed/vSm2tv5TZxw?si=oQyHva7Si6MbEu4F&autoplay=1"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="display: none;"> <!--Link to the online show from YouTube.-->
+                    </iframe>
+                </div>
+
+                <div class="right-image">
+                    <img src="../Images/the-extravaganza1.png" alt="right image" />
+                </div>
+            </div>
+
+            <h1 class="see-albums" id="see-albums">LISTEN NOW</h1> <!--Discography portion starts here-->
+
+            <div class="discography">
+                <div class="albums">
+                    <!-- SMITHEREENS -->
+                    <a href="#" class="album"
+                        data-spotify="https://open.spotify.com/embed/album/39VuC5rYQHAnR6xQwm1WDk?utm_source=generator">
+                        <img src="../Images/SMT1.png" alt="Smithereens Album Cover" class="album-cover" />
+                    </a>
+
+                    <!-- NECTAR -->
+                    <a href="#" class="album"
+                        data-spotify="https://open.spotify.com/embed/album/65edimIChzNNK8VGn56pIK?utm_source=generator">
+                        <img src="../Images/NCTR1.png" alt="Nectar Album Cover" class="album-cover" />
+                    </a>
+
+                    <!-- BALLADS 1 -->
+                    <a href="#" class="album"
+                        data-spotify="https://open.spotify.com/embed/album/5mIImcsuqpiSXg8XvFr81I?utm_source=generator">
+                        <img src="../Images/BLDS01.png" alt="BALLADS1 Album Cover" class="album-cover" />
+                    </a>
+
+                    <!-- IN TONGUES -->
+                    <a href="#" class="album"
+                        data-spotify="https://open.spotify.com/embed/album/3dtSst4EXjGeZVQ5Sco315?utm_source=generator">
+                        <img src="../Images/INTGS1.png" alt="In Tongues Album Cover" class="album-cover" />
+                    </a>
+                </div>
+            </div>
+
+            <!-- This is the popup container for Spotify -->
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <button class="toggle-button" onclick="togglePopup()">&lt;</button>
+                    <iframe id="spotify-frame" style="border-radius:12px" width="400" height="152" frameBorder="0"
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <div class="platform-btns"> <!--hese buttons go below the album portion-->
+                <a href="https://open.spotify.com/artist/3MZsBdqDrRTJihTHQrO6Dq?si=q9jN1ttqR2WwCA57tbkx0w"
+                    class="platform-button">
+                    <img src="../Images/listen-on-spotify.png">
+                </a>
+                <a href="https://music.apple.com/ml/artist/joji/1258279972" class="platform-button">
+                    <img src="../Images/listen-on-apple.png">
+                </a>
+            </div>
+
+            <footer>  <!--Footer starts here. I seperated the footer into left and right section for the grid.-->
+                <div class="footer-container" id="footer">
+                    <div class="footer-left"> <!--Left portion of the footer-->
+                        <div class="footer-links">
+                            <ul>
+                                <li><a href="https://88rising.com">88Rising</a></li>
+                                <li><a href="https://hitcfestival.com">Head in the Clouds <br> Festival</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Cookie Choices</a></li>
+                            </ul>
+
+                            <div class="footer-socials">
+                                <a href="https://www.youtube.com/channel/UCFl7yKfcRcFmIUbKeCA-SJQ" target="_blank">
+                                    <img src="../Images/YouTube.png" alt="Joji YouTube">
+                                </a>
+                                <a href="https://www.instagram.com/sushitrash/" target="_blank">
+                                    <img src="../Images/Instagram.png" alt="Joji Instagram">
+                                </a>
+                                <a href="https://www.tiktok.com/@joji?lang=en" target="_blank">
+                                    <img src="../Images/TikTok.png" alt="Joji TikTok">
+                                </a>
+                                <a href="https://www.facebook.com/jojikansai" target="_blank">
+                                    <img src="../Images/Facebook.png" alt="Joji Facebook">
+                                </a>
+                                <a href="https://x.com/sushitrash" target="_blank">
+                                    <img src="../Images/X.png" alt=" Joji Twitter">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-right">
+                        <!--The right portion of the footer. This is where the MongoDB Atlas conencts-->
+                        <div class="footer-newsletter">
+                            <h2>Sign Up to Hear Updates</h2>
+                            <form id="newsletter-form">
+                                <input type="email" id="email" name="email" placeholder="Your email" required>
+                                <select name="country">
+                                    <option value="United Arab Emirates">United Arab Emirates</option>
+                                    <option value="Philippines">Philippines</option>
+                                    <option value="United Kingdom">United Kingdom</option>
+                                    <option value="Canada">Canada</option>
+                                </select>
+                                <button type="submit">Sign Up Now</button>
+                            </form>
+                            <p>Emails will be sent by or on behalf of 88Rising. <br> You may withdraw your consent
+                                at
+                                any
+                                time. See privacy policy.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
