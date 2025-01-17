@@ -700,10 +700,6 @@ footer {
         z-index: 2;
     }
 
-    .task3_image-container img {
-        max-width: 50%;
-    }
-
     .pandemonium h1 {
         font-size: 3em;
     }
@@ -717,7 +713,8 @@ footer {
     }
 
     .video-container {
-        width: 500px;
+        display: flex;
+        justify-content: center;
     }
 
     .albums {
